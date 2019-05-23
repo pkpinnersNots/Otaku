@@ -1,0 +1,30 @@
+<!--pages/list/list.wxml-->
+
+<view class='seach'>
+     <input class='seach-input'  placeholder="请输入你当前的城市" bindinput="listenerNewLabelInput" value='{{val}}' name='LabelNew' focus='{{true}}' adjust-position></input>
+<button class='buttons' bindtap="getv" name="bu"  hover-class='blue'>搜素</button>
+</view>
+
+<view class='nav'>
+    <view class='nav-a'>{{city}}</view>
+    <view class='nav-b'>时间：{{date}}</view>
+</view>
+<view class='movie'>
+    <view class='movie-list' wx:for='{{movie}}' wx:key="unique" bindtap='details' data-index="{{index}}">
+        <view class='item-img'>
+            <image src='{{item.movie_picture}}'></image>
+        </view>
+        <view class='item-text'>
+            <view class='text1'>
+                <view class='a'>{{item.movie_name}}</view>
+                <view class='b'>
+                    <image src='/img/favorite.png'></image>
+                    <text>{{item.movie_score}}</text>
+                </view>
+            </view>
+            <view class='text2'>           
+                <view>主演：{{item.movie_starring}}</view>
+            </view>
+        </view>
+    </view>
+</view>

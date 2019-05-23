@@ -1,0 +1,9 @@
+<!--pages/video/video.wxml-->
+<view class='card' wx:for="{{video}}" wx:key="unique" bindtap='videoclick' data-index="{{index}}">
+    <text class='card-title'>{{item.name}}</text>
+    <text class='card-data'>{{item.passtime}}</text>
+    <image class='card-img' src='{{item.bimageuri}}' mode='aspectfFill' mode='aspectFill'></image>
+    <text class='card-desc'>{{item.text}}</text>
+    <text class='card-read arrow'>查看视频详情</text>
+</view>
+<view class='loadin' vx:if='{{ishow}}'>正在加载...</view>

@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<!-- 首页轮播图分区 -->
+<view class='slider'>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" mode='aspectFill' />
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<!-- 首页导航分区 -->
+<view class='index-nav'>
+  <navigator class='nav-item' url="/pages/news/news">
+    <image src='/img/xinwen.png'></image>
+    <text>新闻</text>
+  </navigator>
+  <navigator class='nav-item' url='/pages/tianqi/tianqi'>
+    <image src='/img/tianqi.png'></image>
+    <text>天气</text>
+  </navigator>
+   <navigator class='nav-item' url='/pages/get/get'>
+    <image src='/img/fangyi.png'></image>
+    <text>翻译</text>
+  </navigator>
+  <navigator class='nav-item' url='/pages/video/video'>
+    <image src='/img/shipin.png'></image>
+    <text>视频</text>
+  </navigator>
+  <navigator class='nav-item' url='/pages/imgs/imgs'>
+    <image src='/img/duanzi.png'></image>
+    <text>段子</text>
+  </navigator>
+  <navigator class='nav-item' url='/pages/list/list'>
+    <image src='/img/dianyin.png'></image>
+    <text>观影</text>
+  </navigator>
+  <navigator class='nav-item' url="/pages/maps/maps">
+    <image src='/img/maps.png'></image>
+    <text>地图</text>
+  </navigator>
+  <navigator class='nav-item' url="/pages/shops/shops">
+    <image src='/img/shops.png'></image>
+    <text>商城</text>
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/img/allList.png'></image>
+    <text>更多</text>
+  </navigator>
+</view>
+<!-- 首页入口分区 -->
+<view class='index-enter'>
+  <navigator class='enter-item'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557689478847&di=3ac538afd01a7cd9dc46256cbc8ba69f&imgtype=0&src=http%3A%2F%2Fimage.tupian114.com%2F20140416%2F14365680.png.thumb.jpg'></image>
+  </navigator>
+  <navigator class='enter-item'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558284214&di=c227c94e219d81cb444795f627c56c80&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F01%2F09%2F56%2F5903379715a65_610.jpg'></image>
+  </navigator>
+</view>

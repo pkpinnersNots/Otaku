@@ -1,0 +1,33 @@
+<!--pages/contact/contact.wxml-->
+<view class='avatar'>
+    <button class='btn' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+   <image class='img' src='{{nowuser.avatarUrl}}'></image>
+   <text wx:if='{{name}}'>{{name}}</text>
+</button>
+</view>
+<view class='divder'></view>
+<view class='cell'>
+    <navigator class='cell-item arrow'>
+        <text>{{nowuser.nickName}}</text>
+    </navigator>
+      <navigator class='cell-item arrow'>
+        
+        <text>{{nowuser.country}}{{nowuser.province}} {{nowuser.city}}</text>
+    </navigator>
+      <navigator class='cell-item arrow'>
+        <text>我的历史</text>
+    </navigator>
+</view>
+<view class='divder'></view>
+<!-- <view class='cell'>
+    <navigator class='cell-item arrow'>
+        <text>我的历史</text>
+    </navigator>
+      <navigator class='cell-item arrow'>
+        <text>我的历史</text>
+    </navigator>
+      <navigator class='cell-item arrow'>
+        <text>我的历史</text>
+    </navigator>
+</view> -->
+

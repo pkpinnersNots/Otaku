@@ -1,0 +1,68 @@
+/* pages/imgdetalis/imgdetalis.wxss */
+page{
+    background-color: #f1f1f1;
+}
+.imgcard{
+    width: 100%;
+     overflow-y: auto;
+}
+.imgcard-title{
+    position: relative;
+    height: 100rpx;
+    line-height: 50rpx;
+    width: 100%;
+    font-size: 24px;
+    padding-top:10rpx;
+    margin-top:20rpx;
+    box-shadow: -5rpx -5rpx 5rpx rgba(0, 0, 0, .3) inset;
+    background-color: #fff;
+}
+.time{
+    position: absolute;
+    right: 30rpx;
+    bottom: 5rpx;
+    font-size: 12px;
+    color: rgb(160, 134, 134);
+}
+
+.imgcard-inner{
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 20rpx;
+}
+.imgcard-img{
+    width: 100%;
+    background-color: #fff;
+
+}
+.imgcard-img image{
+    width: 100%;
+}
+.like{
+   width: 100%;
+   height: 100rpx;
+   background-color: #fff;
+   position: relative;
+}
+.like-favorite{
+    position: absolute;
+    left: 15rpx;
+    bottom: 0;
+}
+.like-like{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.like-repost{
+    position: absolute;
+    bottom: 0;
+    right: 30rpx;
+}
+.imgs{
+    width: 50rpx;
+    height: 50rpx;
+}

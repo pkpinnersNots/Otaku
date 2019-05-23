@@ -1,0 +1,28 @@
+<!--pages/imgdetalis/imgdetalis.wxml-->
+<view class='imgcard'>
+    <view class='imgcard-title'>
+        <text class='title'>{{item.name}}</text>
+        <text class='time'>时间:{{item.created_at}}</text>
+    </view>
+    <view class='divder'></view>
+    <view class='imgcard-img' >
+        <image src='{{item.cdn_img}}' mode='widthFix'></image>
+    </view>
+    <view class='imgcard-inner'>
+        <text>{{item.text}}</text>
+    </view>
+    <view class='like'>
+       <view class='like-favorite'>
+            <image class='imgs' src='/img/favorite.png'></image>
+            {{item.favourite}}
+       </view>
+       <view class='like-like'>
+            <image class='imgs' src='/img/like.png'></image>
+            {{item.love}}
+        </view>
+       <view class='like-repost'>
+            <image class='imgs' src='/img/respone.png'></image>
+            {{item.repost}}
+       </view>
+    </view>
+</view>

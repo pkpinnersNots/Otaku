@@ -1,0 +1,41 @@
+<!--pages/urse/urse.wxml-->
+<view class='avatar center'>
+   
+    <button class='btn' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+   <image class='center' src='/img/urs-0.png' wx:if='{{!img}}'></image>
+   <image class='center' src='{{img}}'  wx:if='{{img}}'></image>
+   <text wx:if='{{!name}}'>点击登录</text>
+   <text wx:if='{{name}}'>{{name}}</text>
+</button>
+</view>
+<view class='cell'>
+    <view class='cell-item arrow' bindtap='nowuser'>
+        <text>个人资料</text>
+    </view>
+    <navigator class='cell-item arrow'>
+        <text>我的优惠券</text>
+    </navigator>
+</view>
+<view class='divder'></view>
+<view class='cell'>
+    <navigator class='cell-item arrow'>
+        <text>常见问题</text>
+    </navigator>
+    <navigator class='cell-item arrow'>
+        <text>使用条款</text>
+    </navigator>
+     <navigator class='cell-item arrow'>
+        <text>常见问题</text>
+    </navigator>
+    <navigator class='cell-item arrow'>
+        <text>使用条款</text>
+    </navigator>
+</view>
+<view class='divder'></view>
+<view class='cell'>
+    <navigator class='cell-item arrow'>        
+         <button class='dinwen' open-type="openSetting">
+             <text>获取权限</text>
+         </button>
+    </navigator>
+</view>

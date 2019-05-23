@@ -1,0 +1,42 @@
+<!--pages/tianqi/tianqi.wxml-->
+<!-- 搜素 -->
+<view class='seach'>
+     <input class='seach-input'  placeholder="请输入你的城市" bindinput="listenerNewLabelInput"  name='LabelNew'></input>
+<button class='buttons' bindtap="getv" name="bu" hover-class='blue'>搜素</button>
+</view>
+
+<view class='cites'  wx:if="{{!isShow}}">
+    <text>请输入正确的城市名称</text>
+</view>
+
+
+<view class='weatherApi'>
+    <!-- 天气 -->
+<!-- 今日 -->
+    <view class='inner' wx:if="{{isShow}}">
+        <view class='city'>
+        {{city}}  {{forecast[0].date}}
+        </view>
+        <view class='wendu'>
+            <view class='high'>{{wendu}}℃</view>
+            <view class='ganmao'>{{ganmao}}</view>
+            <view class='yesterday'>                                               <text  class='text-title'>昨天</text>
+                <text  class='text-data'>{{yesterday.date}}</text>
+                <text  class='text-high'>{{yesterday.type}} {{yesterday.fx}}  {{yesterday.low}} {{yesterday.high}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 列表 -->
+    <view class='list' wx:if="{{isShow}}">
+        <view class='items' wx:for='{{forecast}}'
+        wx:key='index'>
+            <view class='top'>{{item.date}}</view>
+            <view class='bottom'>
+                <text class='bottom1'>{{item.type}}</text>
+                <text class='bottom1'>{{item.high}}</text>
+                <text class='bottom1'>{{item.low}}</text>
+                <text class='bottom1'>{{item.fengxiang}}</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/imgs/imgs.wxml-->
+<!-- 图文 -->
+<view class='card' wx:for="{{imgs}}" wx:key="unique" bindtap='imgclick' data-index="{{index}}">
+    <text class='card-title'>{{item.name}}</text>
+    <text class='card-data'>{{item.created_at}}</text>
+    <image class='card-img' src='{{item.image0}}' mode='aspectfFill' mode='aspectFill'></image>
+    <text class='card-desc'>{{item.text}}</text>
+    <text class='card-read arrow'>查看图文详情</text>
+</view>
+<view class='loadin' vx:if='{{ishow}}'>正在加载...</view>

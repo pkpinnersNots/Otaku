@@ -1,0 +1,117 @@
+/* pages/list/list.wxss */
+.nav{
+     margin-top: 100rpx;
+    height: 100rpx;
+    width: 100%;
+    display: flex;
+}
+.nav-a{
+    padding-left: 30rpx;
+    line-height: 100rpx;
+    width: 40%;
+}
+.nav-b{
+    line-height: 100rpx
+}
+.movie{
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.movie-list{
+    width: 50%;
+    max-height: 650rpx;
+     
+}
+.move-list, .item-img{
+    margin: 30rpx auto;
+    width: 80%;
+    height: 400rpx;
+    overflow: hidden;
+}
+.movie-list .item-img image{
+    width: 100%;
+}
+.item-text{
+    width: 90%;
+    max-height: 250rpx;
+    margin: 0 auto;
+}
+.text1{
+    width: 100%;
+    height: 50rpx;
+    overflow: hidden;
+}
+.a{
+    width: 70%;
+    font-size: 16px;
+    color:#000000;
+    line-height: 50rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    float: left;
+}
+.b{
+   display: flex;
+    line-height: 50rpx;
+    width: 30%;
+}
+.b image{
+    width: 50%;
+    height: 50rpx;
+}
+/* .text1{
+    display: block;
+    font-size: 18px;
+    color:#000000;
+    line-height: 40rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+} */
+.text2{
+    display: -webkit-box;
+    font-size:14px;
+    line-height: 40rpx;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    color:#a19f9f;
+}
+
+.seach{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120rpx;
+    width: 100%;
+    background-color:#fff;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+}
+.seach-input{
+    display: inline-block;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    border: 1rpx solid rgb(196, 196, 196);
+    height: 80rpx;
+    width: 70%;
+    padding-left: 30rpx;
+}
+.buttons{
+    display: inline-block;
+    margin-top: 20rpx;
+    width: 20%;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: rgb(15, 248, 198);
+    color:gray;
+    border-radius: 10rpx;
+}

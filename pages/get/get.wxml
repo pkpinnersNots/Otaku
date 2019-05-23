@@ -1,0 +1,23 @@
+<!--pages/get/get.wxml-->
+<view class='seach'>
+     <input class='seach-input'  placeholder="请输入您想翻译的文字" bindinput="listenerNewLabelInput"  name='LabelNew' value='{{content}}'></input>
+<button class='buttons' bindtap="getEnglish" name="bu">翻译</button>
+</view>
+
+<view class='sel'>
+    <Select prop-array='{{selectArray}}'  bind:myget='getDate'></Select>
+    <image  class='img' src='/img/zhuanhan-0.png'></image>
+    <Select prop-array='{{selectArray2}}'  bind:myget='setDate'></Select>
+</view>
+
+<view class='put'>
+    <text wx:if='{{!src}}'>源翻译内容：</text>
+    <text>{{src}}</text>
+</view>
+<view class='xia'>
+    <image  class='imgs' src='/img/zhuanhuan-1.png'></image>
+</view>
+<view class='put'>
+    <text wx:if='{{!message}}'>翻译后：</text>
+    <text>{{message}}</text>
+</view>

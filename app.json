@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/urse/urse",
+    "pages/message/message",
+    "pages/contact/contact",
+    "pages/list/list",
+    "pages/shops/shops",
+    "pages/like/like",
+    "pages/get/get",
+    "pages/imgdetalis/imgdetalis",
+    "pages/videodetalis/videodetalis",
+    "pages/tianqi/tianqi",
+    "pages/video/video",
+    "pages/imgs/imgs",
+    "pages/news/news",
+    "pages/newsDetails/newsDetails",
+    "pages/details/details",
+    "pages/maps/maps"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33b0d4",
+    "navigationBarTitleText": "掌上娱乐",
+    "navigationBarTextStyle": "white"
+  },
+"tabBar": {
+    "color": "#000",
+    "selectedColor": "#33b0d4",
+    "list": [
+        {
+            "pagePath": "pages/message/message",
+            "text": "推荐",
+            "iconPath": "img/all-0.png",
+            "selectedIconPath": "img/all-1.png"
+        },
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "img/hours-0.png",
+            "selectedIconPath": "img/hours-1.png"
+        },
+       
+        {
+            "pagePath":"pages/urse/urse",
+            "text": "我的",
+            "iconPath": "img/urs-0.png",
+            "selectedIconPath": "img/urs-1.png"
+        }
+    ]
+},
+"permission": {
+        "scope.userLocation": {
+            "desc": "请点击确定"
+        }
+},
+  "sitemapLocation": "sitemap.json"
+}

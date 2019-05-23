@@ -1,0 +1,4 @@
+<!--pages/shops/shops.wxml-->
+<view class='shop'>
+    <image class='shop-img' src='' ></image>
+</view>

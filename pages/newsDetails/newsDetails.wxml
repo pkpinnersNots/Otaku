@@ -1,0 +1,17 @@
+<!--pages/newsDetails/newsDetails.wxml-->
+<view class='datails'>
+    <view class='top'>
+    <text style=' font-weight:bold; font-size:25px'> {{item.source}} : </text>
+       {{item.title}}
+    </view>
+    <view class='middlle'>
+        <image src='{{item.headpic}}'></image>
+    </view>
+    <view class='bottom'>
+            {{item.summary}}
+    </view>
+    <view class='wetxs'>
+        <view>原文来自:</view>         
+        <text>{{item.source_url}}</text> 
+    </view>
+</view>
